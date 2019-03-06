@@ -121,8 +121,9 @@ small {
 <script>
 appetizerImages = [
   'url("https://media-cdn.tripadvisor.com/media/photo-s/0d/36/34/15/spicy-spider-roll.jpg")',
-   'url("https://cdn-image.foodandwine.com/sites/default/files/styles/medium_2x/public/201408-xl-pimento-cheese-quesadillas.jpg?itok=uqizsUaC")',
-   'url("https://4.bp.blogspot.com/-HovmExtIAFo/WpIEMZlqK2I/AAAAAAAA0pY/gB7psk5vZC8MKPcSCYHnlI271bEZXhHrACLcBGAs/s1600/copycat-red-lobster-cheddar-bay-biscuits-WIDE.jpg")',
+  'url("https://cdn-image.foodandwine.com/sites/default/files/styles/medium_2x/public/201408-xl-pimento-cheese-quesadillas.jpg?itok=uqizsUaC")',
+  'url("https://4.bp.blogspot.com/-HovmExtIAFo/WpIEMZlqK2I/AAAAAAAA0pY/gB7psk5vZC8MKPcSCYHnlI271bEZXhHrACLcBGAs/s1600/copycat-red-lobster-cheddar-bay-biscuits-WIDE.jpg")',
+  'url("https://www.spendwithpennies.com/wp-content/uploads/2013/10/Cheese-Sticks-SpendWithPennies-2-22.jpg")',
 ]
 
 entreeImages = [
@@ -143,6 +144,8 @@ appetizerDivs = [
   '<div class="item"onclick=this.classList.toggle("show-description")><p> Cheese Quesadilla <span class="price">$8.50</span><br /><small>A tortilla filled with cheese, cooked on a griddle. </small></p></div>',
   
   '<div class="item"onclick=this.classList.toggle("show-description")><p>Cheddar Bay Cheese Biscuits <span class="price">$2.00</span><br /><small>Soft, cheesy biscuits with a hint of garlic. <small></p></div>',
+	
+  '<div class="item"onclick=this.classList.toggle("show-description")><p>Mozzerella Sticks <span class="price">$5.00</span><br /><small>Breaded pieces of mozzerella stikcks. Served with marinara sauce. <small></p></div>',
 ]
 entreeDivs = [
   '<div class="item"onclick=this.classList.toggle("show-description")><p>Honey Based Sticky Wings <span class="price">$11.99</span><br /><small>Double-fried chicken wings tossed in a sweet, sticky honey-based sauce. Served in either half-size(5 wings) or full-size(10 wings).</small></p></div>',
@@ -167,6 +170,7 @@ dessertDivs = [
     foods.innerHTML+=appetizerDivs[0]
     foods.innerHTML+=appetizerDivs[1]
     foods.innerHTML+=appetizerDivs[2]
+    foods.innerHTML+=appetizerDivs[3]	  
     items = document.getElementsByClassName("item")
     for (i=0; i<3; i=i+1) {
 		  items[i].style.background = appetizerImages[i]
