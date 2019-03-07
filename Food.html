@@ -130,12 +130,14 @@ entreeImages = [
   'url("https://dc8l3mwto1qll.cloudfront.net/assets/munch_images/rnymn03408/sticky-wings.jpg")',
   'url("https://www.kansascitysteaks.com/dyn-images/pdp_hero/Lobster_and_KC_Strip-55a16081d2d6113e3a83fa4061c6b43e.jpg")',
   'url("https://images-gmi-pmc.edge-generalmills.com/a4b1ce4c-6302-41e4-951d-472c1562e472.jpg")',
+  'url("https://assets.dmagstatic.com/wp-content/uploads/media/0/burger_01-9175.jpg")',
 ]
 
 dessertImages = [
   'url("https://www.katiebirdbakes.com/wp-content/uploads/2017/02/20170204-Cinnamon-Rolls-Cream-Cheese-Icing-katiebirdbakes.com-6-600x789.jpg")',
   'url("https://www.lecremedelacrumb.com/wp-content/uploads/2016/08/apple-crumble-pie-103-500x500.jpg")',
   'url("https://lebeauleblog.com/wp-content/uploads/2015/10/candy-caramel-apples.jpg")',
+  'url("https://media-cdn.tripadvisor.com/media/photo-s/08/57/d5/34/huge-cookie.jpg")',
   ]
   
 appetizerDivs = [
@@ -153,6 +155,8 @@ entreeDivs = [
   '<div class="item"onclick=this.classList.toggle("show-description")><p>Steak and Lobster <span class="price">$20.00</span><br /><small>A gilled T-bone steak seasoned to perfection with a seasoned, steamed North-Atlantic lobster tail. </small></p></div>',
   
   '<div class="item"onclick=this.classList.toggle("show-description")><p>Soft-Shell Taco <span class="price">$10.00</span><p><small>A choice of beef, chicken, pork, or shrimp, witch vegatables, cheese, lettuce, and tomato wrapped in a soft, wheat torilla.</small></p></div>',
+	
+  '<div class="item"onclick=this.classList.toggle("show-description")><p>Loaded Cheeseburger <span class="price">$15.00</span><p><small>A beef patty served with onion rings, bacon, tomatoes, lettuce, your choice of sauce, and any additions you wish. Served with fries on the side.</small></p></div>',
 ]
 dessertDivs = [
   '<div class="item"onclick=this.classList.toggle("show-description")><p>Cinnamon Rolls<span class="price">$3</span><br /><small>Sweet roll made with flour, cinnamon, sugar, and butter, which provide a robust and sweet flavor and a thick cream cheese frosting on top.</small></p></div>',
@@ -160,6 +164,8 @@ dessertDivs = [
   '<div class="item"onclick=this.classList.toggle("show-description")><p>Apple Crumb Pie<span class="price">$2</span><br /><small>Slice of our signature apple pie, with a sweet crumb top, with a vanilla scoop and drizzle of caramel syrup.</small></p></div>',
   
   '<div class="item"onclick=this.classList.toggle("show-description")><p>Caramel or Candy Apple<span class="price">$3</span><br /><small>A juicy GrannySmith apple dipped in sugar candy coating or caramel, with your choice of toppings.</small></p></div>',
+	
+  '<div class="item"onclick=this.classList.toggle("show-description")><p>Large Cookie<span class="price">$3</span><br /><small>A large, warm, gooey cookie.</small></p></div>',
 ]
   
 
@@ -184,8 +190,9 @@ dessertDivs = [
     foods.innerHTML+=entreeDivs[0]
     foods.innerHTML+=entreeDivs[1]
     foods.innerHTML+=entreeDivs[2]
+    foods.innerHTML+=entreeDivs[2]
 	  items = document.getElementsByClassName("item")
-    for (i=0; i<3; i=i+1) {
+    for (i=0; i<4; i=i+1) {
 		  items[i].style.background = entreeImages[i]
 		  items[i].style.backgroundSize = '100% 100%'
     }
@@ -197,8 +204,9 @@ dessertDivs = [
     foods.innerHTML+=dessertDivs[0]
     foods.innerHTML+=dessertDivs[1]
     foods.innerHTML+=dessertDivs[2]
+    foods.innerHTML+=dessertDivs[3]
 	  items = document.getElementsByClassName("item")
-    for (i=0; i<3; i=i+1) {
+    for (i=0; i<4; i=i+1) {
 		  items[i].style.background = dessertImages[i]
 		  items[i].style.backgroundSize = '100% 100%'
     }
